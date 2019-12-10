@@ -1,0 +1,25 @@
+<html>
+<body>
+   <script>
+	   document.write("Hola Mundo");
+   </script>
+   <script>
+       function Nombre() {
+       
+          var StrNom = "";
+          StrNom = document.getElementById("TxtNom").value;
+       
+           if (StrNom == "") {
+	      alert("Por favor escriba algo");
+           }
+	   else {
+     	      alert("Su nombre es: " + StrNom);
+	   }
+       }
+   </script>
+   <form>
+      Ingrese su nombre: <input type="text" id="TxtNom" name="string" /><br>
+      <input type="button" value="Validar" onclick="Nombre();" />
+   </form>
+</body>
+</html>

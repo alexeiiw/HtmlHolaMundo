@@ -1,0 +1,76 @@
+<html>
+<head>
+   <title> Mi primera pagina con estilos</title>
+   <style type="text/css">
+   body {
+      color: purple;
+      background-color: #d8da3d;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      padding-left: 11em }
+   h1 {
+      font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif }
+   ul.navbar {
+      position: absolute;
+      top: 2em;
+      left: 1em;
+      width: em;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 }
+   ul.navbar li {
+      background: white;
+      margin: 0.5em 0;
+      padding: 0.3em;
+      border-right: 1em solid black }
+   ul.navbar a {
+      text-decoration: none }
+   a:link {
+      color: blue }
+   a:visited {
+      color: purple }
+   address {
+      margin-top: 1em;
+      padding-top: 1em;
+      border-top: thin dotted }
+   </style>
+</head>
+
+<body>
+
+<!-- Menu del sitio-->
+<ul class="navbar">
+   <li> <a href="www.yahoo.com"> Yahoo </a>
+   <li> <a href="www.microsoft.com"> Microsoft </a>
+</ul>
+
+<h1>Mi primera pagina</h1>
+
+<p>Bienvenido
+
+<p> Aca realizaremos la demostracion para los parrafos
+
+<address>Creado<br>hoy<br></address>
+
+   <script>
+	   document.write("<br>Hola Mundo");
+   </script>
+   <script>
+       function Nombre() {
+       
+          var StrNom = "";
+          StrNom = document.getElementById("TxtNom").value;
+       
+           if (StrNom == "") {
+	      alert("Por favor escriba algo");
+           }
+	   else {
+     	      alert("Su nombre es: " + StrNom);
+	   }
+       }
+   </script>
+   <form>
+      Ingrese su nombre: <input type="text" id="TxtNom" name="string" /><br>
+      <input type="button" value="Validar" onclick="Nombre();" />
+   </form>
+</body>
+</html>

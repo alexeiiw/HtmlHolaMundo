@@ -1,0 +1,45 @@
+<html>
+<head>
+   <title> Mi primera pagina con estilos</title>
+   <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<!-- Menu del sitio-->
+<ul class="navbar">
+   <li> <a href="www.yahoo.com"> Yahoo </a>
+   <li> <a href="www.microsoft.com"> Microsoft </a>
+</ul>
+
+<h1>Mi primera pagina</h1>
+
+<p>Bienvenido
+
+<p> Aca realizaremos la demostracion para los parrafos
+
+<address>Creado<br>hoy<br></address>
+
+   <script>
+	   document.write("<br>Hola Mundo");
+   </script>
+   <script>
+       function Nombre() {
+       
+          var StrNom = "";
+          StrNom = document.getElementById("TxtNom").value;
+       
+           if (StrNom == "") {
+	      alert("Por favor escriba algo");
+           }
+	   else {
+     	      alert("Su nombre es: " + StrNom);
+	   }
+       }
+   </script>
+   <form>
+      Ingrese su nombre: <input type="text" id="TxtNom" name="string" /><br>
+      <input type="button" value="Validar" onclick="Nombre();" />
+   </form>
+</body>
+</html>
